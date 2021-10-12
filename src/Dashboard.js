@@ -33,7 +33,7 @@ export default function Dashboard() {
                 sethumidity(`${data['humidity']['data'][0]['value']}%`);
                 setwarningMessage(data['warningMessage']);
                 const updateTimeDate = new Date(data['updateTime']);
-                const month = updateTimeDate.getMonth()
+                const month = updateTimeDate.getMonth() + 1
                 const date = updateTimeDate.getDate()
                 const day = char[updateTimeDate.getDay()]
                 const time = updateTimeDate.toLocaleTimeString()
@@ -50,7 +50,7 @@ export default function Dashboard() {
                 // console.log(data);
                 setgeneralSituation(data['generalSituation']);
                 const updateTimeDate = new Date(data['updateTime']);
-                const month = updateTimeDate.getMonth()
+                const month = updateTimeDate.getMonth() + 1
                 const date = updateTimeDate.getDate()
                 const day = char[updateTimeDate.getDay()]
                 const time = updateTimeDate.toLocaleTimeString()
@@ -67,7 +67,7 @@ export default function Dashboard() {
                 // console.log(data);
                 setforecastDesc(data['forecastDesc']);
                 const updateTimeDate = new Date(data['updateTime']);
-                const month = updateTimeDate.getMonth()
+                const month = updateTimeDate.getMonth() + 1
                 const date = updateTimeDate.getDate()
                 const day = char[updateTimeDate.getDay()]
                 const time = updateTimeDate.toLocaleTimeString()
